@@ -70,7 +70,6 @@ graph TB
         CONFIGSVC[Configuration Service]
         VALIDATOR[Config Validator]
         VERSIONMGR[Version Manager]
-        EVENTBUS[Event Bus]
 
         subgraph "xDS Layer"
             ADS[ADS Server]
@@ -84,6 +83,8 @@ graph TB
         SNAPCACHE[Snapshot Cache]
         STREAMMGR[Stream Manager]
     end
+
+    EVENTBUS[Event Bus]
 
     subgraph "Data Layer"
         POSTGRES[(PostgreSQL)]
